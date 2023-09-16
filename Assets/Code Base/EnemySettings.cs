@@ -10,4 +10,12 @@ public class EnemySettings : MonoBehaviour
 
     public float Speed { get { return speed; }}
     public float Acceleration { get { return acceleration; } }
+    public uint Health { get { return health; } }
+
+    public void GetDamage(uint damage)
+    {
+        if (damage > health) return;
+        health -= damage;
+        if(health <= 0) Destroy(gameObject);
+    }
 }

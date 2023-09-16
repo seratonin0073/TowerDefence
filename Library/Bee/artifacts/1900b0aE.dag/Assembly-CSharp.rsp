@@ -347,6 +347,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Code Base/EnemyNavMovement.cs"
 "Assets/Code Base/EnemySettings.cs"
+"Assets/Code Base/EnemySpawner.cs"
+"Assets/Code Base/WaveSpaner.cs"
 -langversion:9.0
 
 /deterministic

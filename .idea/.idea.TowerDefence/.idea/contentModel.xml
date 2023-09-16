@@ -9,10 +9,20 @@
         <e p="Code Base" t="Include">
           <e p="EnemyNavMovement.cs" t="Include" />
           <e p="EnemySettings.cs" t="Include" />
+          <e p="EnemySpawner.cs" t="Include" />
+          <e p="WaveSpaner.cs" t="Include" />
         </e>
         <e p="Material" t="Include">
           <e p="Enemy" t="Include" />
           <e p="LevelMaterial" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="Shell" t="Include" />
+          <e p="Turret" t="Include">
+            <e p="Materials" t="Include">
+              <e p="Materials" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Prefabs" t="Include" />
         <e p="Scenes" t="Include">

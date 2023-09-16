@@ -41,15 +41,22 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code Base\EnemyNavMovement.cs" />
      <Compile Include="Assets\Code Base\EnemySettings.cs" />
+     <Compile Include="Assets\Code Base\EnemyNavMovement.cs" />
+     <Compile Include="Assets\Code Base\EnemySpawner.cs" />
+     <Compile Include="Assets\Code Base\WaveSpaner.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Material" />
+     <Folder Include="Assets\Model\Turret\Materials" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\Model\Shell" />
      <Folder Include="Assets\Scenes\Exemple" />
      <Folder Include="Assets\Material\Enemy" />
+     <Folder Include="Assets\Model\Turret" />
      <Folder Include="Assets\Material\LevelMaterial" />
      <Folder Include="Assets\Prefabs" />
+     <Folder Include="Assets\Model\Turret\Materials\Materials" />
+     <Folder Include="Assets\Model" />
      <Folder Include="Assets\Code Base" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

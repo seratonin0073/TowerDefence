@@ -28,8 +28,11 @@ public class EnemyNavMovement : MonoBehaviour
         
     }
 
+    
+
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Finish!!!");
         if (other.gameObject.CompareTag("Finish"))
         {
             Destroy(gameObject);
