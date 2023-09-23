@@ -41,21 +41,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code Base\EnemySettings.cs" />
-     <Compile Include="Assets\Code Base\EnemyNavMovement.cs" />
-     <Compile Include="Assets\Code Base\EnemySpawner.cs" />
-     <Compile Include="Assets\Code Base\WaveSpaner.cs" />
+     <Compile Include="Assets\Code Base\Spawner\WaveSpaner.cs" />
+     <Compile Include="Assets\Code Base\Enemy\EnemySettings.cs" />
+     <Compile Include="Assets\Code Base\Enemy\EnemyNavMovement.cs" />
+     <Compile Include="Assets\Code Base\Spawner\EnemySpawner.cs" />
+     <Compile Include="Assets\Code Base\Turret\TurretScript.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\Code Base\Turret" />
      <Folder Include="Assets\Material" />
+     <Folder Include="Assets\Code Base\Enemy" />
      <Folder Include="Assets\Model\Turret\Materials" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Model\Shell" />
+     <Folder Include="Assets\Material\Turret" />
      <Folder Include="Assets\Scenes\Exemple" />
      <Folder Include="Assets\Material\Enemy" />
      <Folder Include="Assets\Model\Turret" />
      <Folder Include="Assets\Material\LevelMaterial" />
+     <Folder Include="Assets\Code Base\Spawner" />
      <Folder Include="Assets\Prefabs" />
-     <Folder Include="Assets\Model\Turret\Materials\Materials" />
      <Folder Include="Assets\Model" />
      <Folder Include="Assets\Code Base" />
      <Reference Include="UnityEngine">

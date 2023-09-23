@@ -345,10 +345,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Code Base/EnemyNavMovement.cs"
-"Assets/Code Base/EnemySettings.cs"
-"Assets/Code Base/EnemySpawner.cs"
-"Assets/Code Base/WaveSpaner.cs"
+"Assets/Code Base/Enemy/EnemyNavMovement.cs"
+"Assets/Code Base/Enemy/EnemySettings.cs"
+"Assets/Code Base/Spawner/EnemySpawner.cs"
+"Assets/Code Base/Spawner/WaveSpaner.cs"
+"Assets/Code Base/Turret/TurretScript.cs"
 -langversion:9.0
 
 /deterministic
