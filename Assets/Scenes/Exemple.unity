@@ -1973,6 +1973,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   range: 2.44
+  Bullet: {fileID: 0}
+  GunBarrels: []
+  coolDown: 1
 --- !u!1001 &1204877676
 PrefabInstance:
   m_ObjectHideFlags: 0
