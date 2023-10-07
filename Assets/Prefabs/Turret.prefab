@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 170355435357808141}
   - component: {fileID: 8662554272677502152}
+  - component: {fileID: 4350902908818679092}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -49,6 +50,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.44867992, y: 0.46020055, z: 0.56292313}
   m_Center: {x: 0.006942749, y: -0.008921981, z: -0.021603435}
+--- !u!114 &4350902908818679092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432626791163023169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce9c75a1e3945b488f65db0d8498e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  range: 2.44
+  Bullet: {fileID: 48702377359046717, guid: 7b194146f6d8db342874fdca0797d1eb, type: 3}
+  GunBarrels:
+  - {fileID: 8329053829467468326}
+  - {fileID: 1642662449081187866}
+  coolDown: 0.5
+  turnSpeed: 5
 --- !u!1 &703799848456966952
 GameObject:
   m_ObjectHideFlags: 0

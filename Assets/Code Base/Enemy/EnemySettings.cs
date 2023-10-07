@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySettings : MonoBehaviour
 {
-    [SerializeField] private uint health = 3;
+    [SerializeField] private uint health = 6;
     [SerializeField] private float speed = 3f;
     [SerializeField] private float acceleration = 3f;
 

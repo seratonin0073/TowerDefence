@@ -1954,28 +1954,6 @@ MonoBehaviour:
   Enemy: {fileID: 2295874270336366190, guid: 4f9175f78e6333c4c8a149983da885d1, type: 3}
   wavePeriod: 10
   enemySpawnRate: 5
---- !u!1 &1176984426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 432626791163023169, guid: ef47639f5621b414ab710b129195d37b, type: 3}
-  m_PrefabInstance: {fileID: 2604109964591256921}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1176984427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176984426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bce9c75a1e3945b488f65db0d8498e7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  range: 2.44
-  Bullet: {fileID: 0}
-  GunBarrels: []
-  coolDown: 1
 --- !u!1001 &1204877676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3537,6 +3515,10 @@ PrefabInstance:
     - target: {fileID: 432626791163023169, guid: ef47639f5621b414ab710b129195d37b, type: 3}
       propertyPath: m_Name
       value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350902908818679092, guid: ef47639f5621b414ab710b129195d37b, type: 3}
+      propertyPath: coolDown
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef47639f5621b414ab710b129195d37b, type: 3}

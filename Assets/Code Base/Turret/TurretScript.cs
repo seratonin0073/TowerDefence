@@ -12,7 +12,8 @@ public class TurretScript : MonoBehaviour
     [SerializeField] private GameObject Bullet;
     [SerializeField] private Transform[] GunBarrels;
     [SerializeField] private float coolDown = 1f;
-    private bool isShoot = false;
+    [SerializeField] private float turnSpeed = 1f;
+    private bool isShoot = true;
     private int barrelCounter = 0;
     
     
@@ -25,15 +26,29 @@ public class TurretScript : MonoBehaviour
 
     private void Update()
     {
-        if (target != null) transform.LookAt(target);
+        Look();
     }
 
+    private void Look()
+    {
+        if (target != null)
+        {
+            Quaternion look = Quaternion.LookRotation(target.position - transform.position);
+            transform.rotation = Quaternion.Lerp(transform.rotation, look, Time.deltaTime * turnSpeed);
+            if (isShoot)
+            {
+                StartCoroutine(Shoot());
+                isShoot = !isShoot;
+            }
+        }
+    }
+    
     IEnumerator Shoot()
     {
-        GameObject bullet = Instantiate(Bullet, GunBarrels[barrelCounter]);
+        GameObject bullet = Instantiate(Bullet, GunBarrels[barrelCounter].position, Quaternion.identity);
         bullet.transform.parent = null;
+        bullet.GetComponent<BulletScript>().TakeForce(target);
         barrelCounter = ++barrelCounter % GunBarrels.Length;
-        
         yield return new WaitForSeconds(coolDown);
         isShoot = !isShoot;
     }
