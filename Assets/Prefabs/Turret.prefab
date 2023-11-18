@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   range: 2.44
+  FireExplosion: {fileID: 1134129239631916, guid: 7e48ba6b1b968764490bbc70b66e3fe1, type: 3}
   Bullet: {fileID: 48702377359046717, guid: 7b194146f6d8db342874fdca0797d1eb, type: 3}
   GunBarrels:
   - {fileID: 8329053829467468326}

@@ -20,7 +20,7 @@ public class WaveSpaner : MonoBehaviour
     {
         if(waveCounter == 1) yield return new WaitForSeconds(3);
         else yield return new WaitForSeconds(wavePeriod);
-        for (int i = 0; i < 5 + waveCounter * 2; i++)
+        for (int i = 0; i < 5 + waveCounter * 2; i++)//0 to 5 + 7 * 2
         {
             Instantiate(Enemy, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(10 / enemySpawnRate);

@@ -10,16 +10,13 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         if(Enemy == null) Debug.LogError("Enemy is empty");
-        InvokeRepeating("Spawn", startSpawnDelay, 10/spawnRate);
+        InvokeRepeating("Spawn", startSpawnDelay, 10/spawnRate);// 10/5  <  10/2
     }
 
     private void Spawn()
     {
-        Instantiate(Enemy, transform.position, Quaternion.identity);
+        Instantiate(Enemy, transform.position, Quaternion.identity);//метод створення об'єктів
     }
 
-    void Update()
-    {
-        
-    }
+    
 }

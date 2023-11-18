@@ -7,6 +7,7 @@ public class TurretScript : MonoBehaviour
     [Header("Turret")]
     [SerializeField] private Transform target;
     [SerializeField] private float range = 3f;
+    [SerializeField] private GameObject FireExplosion;
 
     [Header("Bullet")] 
     [SerializeField] private GameObject Bullet;
@@ -46,9 +47,11 @@ public class TurretScript : MonoBehaviour
     IEnumerator Shoot()
     {
         GameObject bullet = Instantiate(Bullet, GunBarrels[barrelCounter].position, Quaternion.identity);
+        GameObject fire = Instantiate(FireExplosion, GunBarrels[barrelCounter].position, Quaternion.identity);
+        Destroy(fire, 1f);
         bullet.transform.parent = null;
         bullet.GetComponent<BulletScript>().TakeForce(target);
-        barrelCounter = ++barrelCounter % GunBarrels.Length;
+        barrelCounter = ++barrelCounter % GunBarrels.Length;//0   3 % 2 = 1
         yield return new WaitForSeconds(coolDown);
         isShoot = !isShoot;
     }

@@ -14,8 +14,11 @@ public class EnemySettings : MonoBehaviour
 
     public void GetDamage(uint damage)
     {
-        if (damage > health) return;
+        if (damage > health)
+        {
+            CoinController.AddCoin(5);
+            Destroy(gameObject);
+        }
         health -= damage;
-        if(health <= 0) Destroy(gameObject);
     }
 }
